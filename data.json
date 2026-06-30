@@ -1,0 +1,82 @@
+[
+  {
+    "tipNumber": 1,
+    "icon": "💧",
+    "title": "Stay Hydrated",
+    "category": "Hydration",
+    "impact": "⭐⭐⭐⭐⭐",
+    "description": "Drink enough water throughout the day to support your body's functions, improve concentration, and maintain energy levels."
+  },
+  {
+    "tipNumber": 2,
+    "icon": "🥗",
+    "title": "Eat a Balanced Diet",
+    "category": "Nutrition",
+    "impact": "⭐⭐⭐⭐⭐",
+    "description": "Fill your meals with vegetables, fruits, whole grains, lean protein, and healthy fats for long-term health."
+  },
+  {
+    "tipNumber": 3,
+    "icon": "🏃",
+    "title": "Stay Active",
+    "category": "Fitness",
+    "impact": "⭐⭐⭐⭐⭐",
+    "description": "Aim for at least 30 minutes of physical activity most days to strengthen your heart, muscles, and overall fitness."
+  },
+  {
+    "tipNumber": 4,
+    "icon": "😴",
+    "title": "Prioritize Sleep",
+    "category": "Recovery",
+    "impact": "⭐⭐⭐⭐⭐",
+    "description": "Getting 7–9 hours of quality sleep each night helps your body recover and keeps your mind sharp."
+  },
+  {
+    "tipNumber": 5,
+    "icon": "🧘",
+    "title": "Manage Stress",
+    "category": "Mental Health",
+    "impact": "⭐⭐⭐⭐☆",
+    "description": "Take time each day to relax, breathe deeply, or enjoy activities that help reduce stress."
+  },
+  {
+    "tipNumber": 6,
+    "icon": "🚶",
+    "title": "Walk More",
+    "category": "Lifestyle",
+    "impact": "⭐⭐⭐⭐☆",
+    "description": "Even a short daily walk can improve your mood, support heart health, and increase your daily activity."
+  },
+  {
+    "tipNumber": 7,
+    "icon": "🌞",
+    "title": "Get Fresh Air",
+    "category": "Wellness",
+    "impact": "⭐⭐⭐☆☆",
+    "description": "Spend some time outdoors whenever possible to refresh your mind and enjoy natural sunlight."
+  },
+  {
+    "tipNumber": 8,
+    "icon": "🪑",
+    "title": "Maintain Good Posture",
+    "category": "Posture",
+    "impact": "⭐⭐⭐☆☆",
+    "description": "Sit and stand with proper posture to reduce back pain and improve overall body alignment."
+  },
+  {
+    "tipNumber": 9,
+    "icon": "🍎",
+    "title": "Choose Healthy Snacks",
+    "category": "Nutrition",
+    "impact": "⭐⭐⭐⭐☆",
+    "description": "Replace sugary snacks with fruit, yogurt, nuts, or other nutritious options to stay energized."
+  },
+  {
+    "tipNumber": 10,
+    "icon": "❤️",
+    "title": "Be Consistent",
+    "category": "Healthy Habits",
+    "impact": "⭐⭐⭐⭐⭐",
+    "description": "Healthy habits practiced consistently over time lead to lasting improvements in your overall well-being."
+  }
+]
