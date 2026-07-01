@@ -78,5 +78,165 @@
     "category": "Healthy Habits",
     "impact": "⭐⭐⭐⭐⭐",
     "description": "Healthy habits practiced consistently over time lead to lasting improvements in your overall well-being."
+  },
+  {
+    "tipNumber": 11,
+    "icon": "🫁",
+    "title": "Practice Deep Breathing",
+    "category": "Mental Health",
+    "impact": "⭐⭐⭐⭐☆",
+    "description": "Spend a few minutes each day on slow, deep breaths to lower your heart rate and calm your nervous system."
+  },
+  {
+    "tipNumber": 12,
+    "icon": "☀️",
+    "title": "Get Morning Sunlight",
+    "category": "Wellness",
+    "impact": "⭐⭐⭐⭐☆",
+    "description": "Expose yourself to natural light in the first hour after waking to regulate your circadian rhythm and boost mood."
+  },
+  {
+    "tipNumber": 13,
+    "icon": "🍳",
+    "title": "Eat a Proper Breakfast",
+    "category": "Nutrition",
+    "impact": "⭐⭐⭐⭐☆",
+    "description": "Start your day with a nutrient-dense meal to stabilize blood sugar and power your morning focus."
+  },
+  {
+    "tipNumber": 14,
+    "icon": "🧠",
+    "title": "Challenge Your Brain",
+    "category": "Mental Health",
+    "impact": "⭐⭐⭐⭐☆",
+    "description": "Read, learn something new, or solve puzzles daily to keep your mind sharp and build cognitive reserve."
+  },
+  {
+    "tipNumber": 15,
+    "icon": "📱",
+    "title": "Limit Screen Time",
+    "category": "Lifestyle",
+    "impact": "⭐⭐⭐⭐☆",
+    "description": "Take regular breaks from screens, especially before bed, to protect your eyes and improve sleep quality."
+  },
+  {
+    "tipNumber": 16,
+    "icon": "🫀",
+    "title": "Monitor Your Heart Rate",
+    "category": "Fitness",
+    "impact": "⭐⭐⭐☆☆",
+    "description": "Track your resting heart rate over time as a simple indicator of your cardiovascular fitness level."
+  },
+  {
+    "tipNumber": 17,
+    "icon": "🥦",
+    "title": "Eat More Greens",
+    "category": "Nutrition",
+    "impact": "⭐⭐⭐⭐⭐",
+    "description": "Leafy greens like spinach, kale, and broccoli are packed with vitamins, minerals, and cancer-fighting antioxidants."
+  },
+  {
+    "tipNumber": 18,
+    "icon": "🧴",
+    "title": "Wear Sunscreen Daily",
+    "category": "Wellness",
+    "impact": "⭐⭐⭐⭐☆",
+    "description": "Apply SPF 30+ every morning, even on cloudy days, to protect your skin from UV damage and reduce cancer risk."
+  },
+  {
+    "tipNumber": 19,
+    "icon": "🧂",
+    "title": "Reduce Sodium Intake",
+    "category": "Nutrition",
+    "impact": "⭐⭐⭐⭐☆",
+    "description": "Cutting back on salt helps lower blood pressure and reduces strain on your kidneys and cardiovascular system."
+  },
+  {
+    "tipNumber": 20,
+    "icon": "🍷",
+    "title": "Drink Alcohol in Moderation",
+    "category": "Lifestyle",
+    "impact": "⭐⭐⭐⭐☆",
+    "description": "Limiting alcohol to low or no intake significantly reduces your risk of liver disease, cancer, and accidents."
+  },
+  {
+    "tipNumber": 21,
+    "icon": "🚭",
+    "title": "Avoid Smoking",
+    "category": "Healthy Habits",
+    "impact": "⭐⭐⭐⭐⭐",
+    "description": "Not smoking is one of the single most impactful things you can do for your long-term health and life expectancy."
+  },
+  {
+    "tipNumber": 22,
+    "icon": "👫",
+    "title": "Nurture Relationships",
+    "category": "Mental Health",
+    "impact": "⭐⭐⭐⭐⭐",
+    "description": "Strong social connections are one of the most reliable predictors of longevity, happiness, and resilience."
+  },
+  {
+    "tipNumber": 23,
+    "icon": "🦷",
+    "title": "Brush and Floss Daily",
+    "category": "Healthy Habits",
+    "impact": "⭐⭐⭐☆☆",
+    "description": "Good oral hygiene prevents gum disease, which is linked to heart disease, diabetes, and cognitive decline."
+  },
+  {
+    "tipNumber": 24,
+    "icon": "🏋️",
+    "title": "Strength Train",
+    "category": "Fitness",
+    "impact": "⭐⭐⭐⭐⭐",
+    "description": "Lifting weights or doing resistance exercises 2–3x per week maintains muscle mass, bone density, and metabolism."
+  },
+  {
+    "tipNumber": 25,
+    "icon": "🧊",
+    "title": "Take Cold Showers",
+    "category": "Recovery",
+    "impact": "⭐⭐⭐☆☆",
+    "description": "Brief cold exposure can improve circulation, boost alertness, and support faster muscle recovery."
+  },
+  {
+    "tipNumber": 26,
+    "icon": "📖",
+    "title": "Keep a Gratitude Journal",
+    "category": "Mental Health",
+    "impact": "⭐⭐⭐⭐☆",
+    "description": "Writing down 3 things you're grateful for each day measurably improves mood and life satisfaction over time."
+  },
+  {
+    "tipNumber": 27,
+    "icon": "🍚",
+    "title": "Eat Slowly",
+    "category": "Nutrition",
+    "impact": "⭐⭐⭐☆☆",
+    "description": "Chewing thoroughly and eating slowly improves digestion, reduces overeating, and boosts satisfaction from meals."
+  },
+  {
+    "tipNumber": 28,
+    "icon": "💊",
+    "title": "Take Vitamins Mindfully",
+    "category": "Healthy Habits",
+    "impact": "⭐⭐⭐☆☆",
+    "description": "Supplement only genuine deficiencies — vitamin D, B12, magnesium, and omega-3s are worth checking via bloodwork."
+  },
+  {
+    "tipNumber": 29,
+    "icon": "🌿",
+    "title": "Spend Time in Nature",
+    "category": "Wellness",
+    "impact": "⭐⭐⭐⭐☆",
+    "description": "Regular time in green or blue spaces reduces cortisol, lowers blood pressure, and improves mental well-being."
+  },
+  {
+    "tipNumber": 30,
+    "icon": "🧹",
+    "title": "Declutter Your Space",
+    "category": "Lifestyle",
+    "impact": "⭐⭐⭐☆☆",
+    "description": "A tidy environment lowers background stress, improves focus, and makes it easier to build healthy routines."
   }
 ]
