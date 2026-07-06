@@ -1,3 +1,9 @@
+import TipCard from "./components/tipCard/page";
+
 export default function Home() {
-  return <div></div>;
+  return (
+    <div>
+      <TipCard />
+    </div>
+  );
 }
