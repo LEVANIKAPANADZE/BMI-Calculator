@@ -36,34 +36,34 @@ export default function Page() {
         <div
           className={`
             bg-white border border-gray-200 rounded-2xl shadow-sm
-            px-5 py-5 flex flex-col gap-3
-            transition-all duration-300 ease-in-out
+            px-5 py-4 transition-all duration-300 ease-in-out
             ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-1"}
           `}
         >
           {tip ? (
-            <>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 flex-shrink-0 flex items-center justify-center bg-gray-50 border border-gray-100 rounded-xl text-xl">
-                  {tip.icon}
+            <div className="flex flex-col md:flex-row md:items-center gap-3">
+              <div className="flex-1 flex flex-col gap-1.5 min-w-0">
+                <div className="flex items-center gap-2">
+                  <span className="text-xs font-medium text-gray-400 uppercase tracking-wider">
+                    {tip.category}
+                  </span>
+                  <span className="text-xs text-gray-300">·</span>
+                  <span className="text-xs text-gray-400">{tip.impact}</span>
                 </div>
-                <div className="flex flex-col">
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs font-medium text-gray-400 uppercase tracking-wider">
-                      {tip.category}
-                    </span>
-                    <span className="text-xs text-gray-300">·</span>
-                    <span className="text-xs text-gray-400">{tip.impact}</span>
-                  </div>
-                  <p className="text-sm font-semibold text-gray-900"></p>
+
+                <div className="flex items-center gap-2">
+                  <span className="text-base leading-none">{tip.icon}</span>
+                  <p className="text-sm font-semibold text-gray-900">
+                    {tip.title}
+                  </p>
                 </div>
+
+                <p className="text-sm text-gray-500 leading-relaxed">
+                  {tip.description}
+                </p>
               </div>
 
-              <p className="text-sm text-gray-500 leading-relaxed">
-                {tip.description}
-              </p>
-
-              <div className="flex items-center gap-1.5">
+              <div className="flex md:flex-col items-center gap-1.5 flex-shrink-0">
                 {tips.slice(0, 6).map((_, i) => (
                   <button
                     key={i}
@@ -74,15 +74,15 @@ export default function Page() {
                         setVisible(true);
                       }, 400);
                     }}
-                    className={`h-1.5 rounded-full transition-all duration-300 ${
+                    className={`rounded-full transition-all duration-300 ${
                       i === current % 6
-                        ? "bg-gray-800 w-4"
-                        : "bg-gray-200 w-1.5"
+                        ? "bg-gray-800 w-4 h-1.5 md:w-1.5 md:h-4"
+                        : "bg-gray-200 w-1.5 h-1.5"
                     }`}
                   />
                 ))}
               </div>
-            </>
+            </div>
           ) : (
             <div className="h-16 w-full bg-gray-100 rounded-xl animate-pulse" />
           )}
