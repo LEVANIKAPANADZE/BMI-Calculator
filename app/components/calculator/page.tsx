@@ -7,18 +7,36 @@ export default function Page() {
     height: "",
     weight: "",
   });
+
   const [bmi, setBmi] = useState<number | null>();
+  const [error, setError] = useState<string | null>(null);
 
   function calculate() {
-    const heightInMeters = Number(form.height) / 100;
+    const height = Number(form.height);
     const weight = Number(form.weight);
 
+    if (!height || !weight || height <= 0 || weight <= 0) {
+      setError("Please enter valid height and weight!");
+      setBmi(null);
+      return;
+    }
+
+    setError(null);
+
+    const heightInMeters = height / 100;
     const BMI = weight / (heightInMeters * heightInMeters);
 
     setBmi(Number(BMI.toFixed(1)));
   }
 
-  console.log(bmi);
+  function clear() {
+    setForm({
+      height: "",
+      weight: "",
+    });
+    setBmi(null);
+    setError(null);
+  }
 
   return (
     <div>
@@ -53,6 +71,16 @@ export default function Page() {
       </div>
 
       <button onClick={() => calculate()}>Calculate</button>
+      <button onClick={clear}>Clear</button>
+
+      {error && <p style={{ color: "red" }}>{error}</p>}
+
+      {bmi !== null && (
+        <div>
+          <h3>Your BMI</h3>
+          <span>{bmi}</span>
+        </div>
+      )}
     </div>
   );
 }
