@@ -9,6 +9,7 @@ export default function Header() {
   return (
     <div className="px-4 md:px-8 xl:px-12 pt-4 md:pt-6">
       <header className="flex items-center justify-between px-4 md:px-6 h-14 bg-white border border-gray-200 rounded-2xl shadow-sm max-w-screen-xl mx-auto">
+        <Image src="/bmi_logo.jpeg" alt="website logo" width={24} height={24} />
         <h1 className="text-base font-semibold tracking-tight text-gray-900">
           BMI Calculator
         </h1>

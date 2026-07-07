@@ -15,8 +15,8 @@ export const metadata: Metadata = {
   description:
     "Calculate your Body Mass Index and receive simple health insights to help you better understand your overall wellness.",
   icons: {
-    icon: "/bmi_logo.png",
-    apple: "/bmi_logo.png",
+    icon: "/bmi_logo.jpeg",
+    apple: "/bmi_logo.jpeg",
   },
   openGraph: {
     title: "BMI Calculator",
