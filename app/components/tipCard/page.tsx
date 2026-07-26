@@ -36,7 +36,7 @@ export default function Page() {
         <div
           className={`
             bg-white border border-gray-200 rounded-2xl shadow-sm
-            px-5 py-4 transition-all duration-300 ease-in-out
+            px-5 py-4 md:px-6 md:py-5 transition-all duration-300 ease-in-out
             ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-1"}
           `}
         >
@@ -53,7 +53,7 @@ export default function Page() {
 
                 <div className="flex items-center gap-2">
                   <span className="text-base leading-none">{tip.icon}</span>
-                  <p className="text-sm font-semibold text-gray-900">
+                  <p className="text-sm md:text-base font-semibold text-gray-900">
                     {tip.title}
                   </p>
                 </div>
@@ -74,10 +74,10 @@ export default function Page() {
                         setVisible(true);
                       }, 400);
                     }}
-                    className={`rounded-full transition-all duration-300 ${
+                    className={`rounded-full transition-all duration-300 cursor-pointer ${
                       i === current % 6
                         ? "bg-gray-800 w-4 h-1.5 md:w-1.5 md:h-4"
-                        : "bg-gray-200 w-1.5 h-1.5"
+                        : "bg-gray-200 hover:bg-gray-300 w-1.5 h-1.5"
                     }`}
                   />
                 ))}
