@@ -238,5 +238,77 @@
     "category": "Lifestyle",
     "impact": "⭐⭐⭐☆☆",
     "description": "A tidy environment lowers background stress, improves focus, and makes it easier to build healthy routines."
+  },
+  {
+    "tipNumber": 31,
+    "icon": "🦠",
+    "title": "Eat Fermented Foods",
+    "category": "Nutrition",
+    "impact": "⭐⭐⭐⭐☆",
+    "description": "Incorporate foods like yogurt, kefir, sauerkraut, or kimchi to promote a healthy gut microbiome and support immunity."
+  },
+  {
+    "tipNumber": 32,
+    "icon": "🧘‍♀️",
+    "title": "Stretch Daily",
+    "category": "Fitness",
+    "impact": "⭐⭐⭐⭐☆",
+    "description": "Spend a few minutes stretching each day to maintain flexibility, improve joint range of motion, and prevent injuries."
+  },
+  {
+    "tipNumber": 33,
+    "icon": "👁️",
+    "title": "Follow the 20-20-20 Rule",
+    "category": "Wellness",
+    "impact": "⭐⭐⭐☆☆",
+    "description": "Every 20 minutes, look at something 20 feet away for at least 20 seconds to reduce digital eye strain and fatigue."
+  },
+  {
+    "tipNumber": 34,
+    "icon": "⏱️",
+    "title": "Practice Time-Restricted Eating",
+    "category": "Nutrition",
+    "impact": "⭐⭐⭐☆☆",
+    "description": "Limit your daily eating window to 10-12 hours to support metabolic health, digestion, and cellular repair processes."
+  },
+  {
+    "tipNumber": 35,
+    "icon": "🚫",
+    "title": "Limit Ultra-Processed Foods",
+    "category": "Nutrition",
+    "impact": "⭐⭐⭐⭐⭐",
+    "description": "Minimize intake of highly processed foods laden with added sugars, unhealthy fats, and artificial preservatives."
+  },
+  {
+    "tipNumber": 36,
+    "icon": "📰",
+    "title": "Curate Media Consumption",
+    "category": "Mental Health",
+    "impact": "⭐⭐⭐⭐☆",
+    "description": "Set boundaries on news and social media consumption to prevent doomscrolling and protect your mental well-being."
+  },
+  {
+    "tipNumber": 37,
+    "icon": "🧍",
+    "title": "Break Up Sitting Time",
+    "category": "Lifestyle",
+    "impact": "⭐⭐⭐⭐☆",
+    "description": "Stand up, stretch, or walk around for at least a minute or two every hour to combat the negative effects of prolonged sitting."
+  },
+  {
+    "tipNumber": 38,
+    "icon": "🎶",
+    "title": "Listen to Music",
+    "category": "Mental Health",
+    "impact": "⭐⭐⭐☆☆",
+    "description": "Listen to your favorite music to lower stress hormones, elevate your mood, and boost cognitive performance."
+  },
+  {
+    "tipNumber": 39,
+    "icon": "😂",
+    "title": "Laugh More Often",
+    "category": "Wellness",
+    "impact": "⭐⭐⭐⭐☆",
+    "description": "Incorporate humor into your daily life. Laughter reduces stress, stimulates your organs, and can even temporarily relieve pain."
   }
 ]

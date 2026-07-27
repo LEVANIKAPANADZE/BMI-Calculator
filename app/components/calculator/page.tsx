@@ -2,13 +2,17 @@
 
 import { useState } from "react";
 
-export default function Page() {
+type CalculatorProps = {
+  bmi: number | null | undefined;
+  setBmi: (bmi: number | null | undefined) => void;
+};
+
+export default function Page({ bmi, setBmi }: CalculatorProps) {
   const [form, setForm] = useState({
     height: "",
     weight: "",
   });
 
-  const [bmi, setBmi] = useState<number | null>();
   const [error, setError] = useState<string | null>(null);
 
   function calculate() {
