@@ -6,7 +6,7 @@ import Calculator from "./components/calculator/page";
 import BmiScale from "./components/bmiScale/page";
 
 export default function Home() {
-  const [bmi, setBmi] = useState<number | null>();
+  const [bmi, setBmi] = useState<number | null>(null);
 
   return (
     <div>

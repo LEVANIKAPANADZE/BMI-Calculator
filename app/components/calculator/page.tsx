@@ -3,8 +3,8 @@
 import { useState } from "react";
 
 type CalculatorProps = {
-  bmi: number | null | undefined;
-  setBmi: (bmi: number | null | undefined) => void;
+  bmi: number | null;
+  setBmi: (bmi: number | null) => void;
 };
 
 export default function Page({ bmi, setBmi }: CalculatorProps) {
