@@ -18,13 +18,14 @@ export default function Page() {
 
   useEffect(() => {
     if (tips.length === 0) return;
+
     const interval = setInterval(() => {
       setVisible(false);
       setTimeout(() => {
         setCurrent((prev) => (prev + 1) % tips.length);
         setVisible(true);
       }, 400);
-    }, 5000);
+    }, 7000);
     return () => clearInterval(interval);
   }, [tips]);
 
