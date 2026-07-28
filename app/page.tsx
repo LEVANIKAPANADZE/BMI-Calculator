@@ -11,8 +11,17 @@ export default function Home() {
   return (
     <div>
       <TipCard />
-      <Calculator bmi={bmi} setBmi={setBmi} />
-      <BmiScale bmi={bmi} />
+
+      <div className="w-full px-4 md:px-8 xl:px-12 py-6 md:py-10">
+        <div className="max-w-md md:max-w-5xl mx-auto flex flex-col md:flex-row gap-4 md:items-stretch">
+          <div className="flex-1">
+            <Calculator bmi={bmi} setBmi={setBmi} />
+          </div>
+          <div className="md:w-64">
+            <BmiScale bmi={bmi} />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
