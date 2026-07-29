@@ -58,15 +58,15 @@ export default function Page({ bmi }: BmiScaleProps) {
   const category = hasBmi ? getCategory(bmi) : null;
 
   return (
-    <div className="bg-white border border-gray-200 rounded-2xl shadow-sm px-6 py-6 md:px-6 md:py-7 h-full flex flex-col md:items-center gap-5">
+    <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl shadow-sm px-6 py-6 md:px-6 md:py-7 h-full flex flex-col md:items-center gap-5">
       <div className="flex items-center justify-between w-full md:flex-col md:gap-1.5">
-        <span className="text-xs md:text-[11px] font-medium text-gray-400 uppercase tracking-wider">
+        <span className="text-xs md:text-[11px] font-medium text-gray-400 dark:text-gray-500 uppercase tracking-wider">
           BMI Scale
         </span>
 
         <span
           className={`text-sm md:text-base font-bold text-center ${
-            category ? category.text : "text-gray-300"
+            category ? category.text : "text-gray-300 dark:text-gray-600"
           }`}
         >
           {category ? category.label : "No data yet"}
@@ -75,7 +75,7 @@ export default function Page({ bmi }: BmiScaleProps) {
 
       <div className="flex flex-col gap-2 w-full md:hidden">
         <div className="relative w-full h-4">
-          <div className="absolute inset-0 flex rounded-full overflow-hidden bg-gray-100 shadow-inner">
+          <div className="absolute inset-0 flex rounded-full overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-inner">
             {CATEGORIES.map((c) => (
               <div
                 key={c.label}
@@ -88,12 +88,12 @@ export default function Page({ bmi }: BmiScaleProps) {
           </div>
 
           <div
-            className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-5 h-5 bg-white border-2 border-gray-800 rounded-full shadow-md transition-all duration-300 z-10"
+            className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-5 h-5 bg-white dark:bg-gray-900 border-2 border-gray-800 dark:border-gray-200 rounded-full shadow-md transition-all duration-300 z-10"
             style={{ left: `${percent}%` }}
           />
         </div>
 
-        <div className="flex justify-between text-[10px] font-medium text-gray-400 px-0.5">
+        <div className="flex justify-between text-[10px] font-medium text-gray-400 dark:text-gray-500 px-0.5">
           <span>{SCALE_MIN}</span>
           <span>18.5</span>
           <span>25</span>
@@ -103,7 +103,7 @@ export default function Page({ bmi }: BmiScaleProps) {
       </div>
 
       <div className="hidden md:flex flex-1 gap-4 items-stretch">
-        <div className="flex flex-col justify-between text-xs font-semibold text-gray-400 py-1">
+        <div className="flex flex-col justify-between text-xs font-semibold text-gray-400 dark:text-gray-500 py-1">
           <span>{SCALE_MAX}</span>
           <span>30</span>
           <span>25</span>
@@ -112,7 +112,7 @@ export default function Page({ bmi }: BmiScaleProps) {
         </div>
 
         <div
-          className="relative w-8 rounded-full bg-gray-100 shadow-inner"
+          className="relative w-8 rounded-full bg-gray-100 dark:bg-gray-800 shadow-inner"
           role="img"
           aria-label={
             hasBmi ? `BMI ${bmi}, ${category?.label}` : "BMI scale, no data yet"
@@ -131,18 +131,18 @@ export default function Page({ bmi }: BmiScaleProps) {
           </div>
 
           <div
-            className="absolute left-1/2 -translate-x-1/2 w-10 xl:w-12 h-1.5 bg-gray-800 rounded-full shadow-lg transition-all duration-300 z-10"
+            className="absolute left-1/2 -translate-x-1/2 w-10 xl:w-12 h-1.5 bg-gray-800 dark:bg-gray-100 rounded-full shadow-lg transition-all duration-300 z-10"
             style={{ bottom: `${percent}%` }}
           />
         </div>
       </div>
 
-      <div className="flex flex-wrap md:flex-col-reverse items-center md:items-start gap-x-4 gap-y-1.5 pt-4 md:pt-0 border-t md:border-t-0 border-gray-100 w-full">
+      <div className="flex flex-wrap md:flex-col-reverse items-center md:items-start gap-x-4 gap-y-1.5 pt-4 md:pt-0 border-t md:border-t-0 border-gray-100 dark:border-gray-800 w-full">
         {CATEGORIES.map((c) => (
           <div key={c.label} className="flex items-center gap-1.5">
             <span className={`w-2 h-2 rounded-full ${c.bar}`} />
 
-            <span className="text-[11px] md:text-xs text-gray-500">
+            <span className="text-[11px] md:text-xs text-gray-500 dark:text-gray-400">
               {c.label}
             </span>
           </div>
