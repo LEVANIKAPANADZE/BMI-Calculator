@@ -4,6 +4,7 @@ import "./globals.css";
 
 import Header from "./components/header/page";
 import Footer from "./components/footer/page";
+import Providers from "./providers";
 
 const font = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -32,11 +33,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${font.className} min-h-screen flex flex-col`}>
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <Providers>
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

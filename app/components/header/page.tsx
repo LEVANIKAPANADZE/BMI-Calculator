@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useTheme } from "next-themes";
 
 export default function Header() {
-  const [light, setLight] = useState(true);
+  const { theme, setTheme } = useTheme();
 
   return (
     <div className="px-4 md:px-8 xl:px-12 pt-4 md:pt-6">
@@ -17,20 +17,21 @@ export default function Header() {
             height={28}
             className="rounded-md"
           />
+
           <h1 className="text-base md:text-lg font-semibold tracking-tight text-gray-900">
             BMI Calculator
           </h1>
         </div>
 
         <button
-          onClick={() => setLight(!light)}
+          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           aria-label="Toggle theme"
           className="flex items-center justify-center w-9 h-9 md:w-10 md:h-10 rounded-lg bg-transparent hover:bg-gray-100 active:scale-95 transition-all cursor-pointer"
         >
-          {light ? (
-            <Image src="/contrast.png" alt="Sun" width={22} height={22} />
-          ) : (
+          {theme === "dark" ? (
             <Image src="/crescent-moon.png" alt="Moon" width={22} height={22} />
+          ) : (
+            <Image src="/contrast.png" alt="Sun" width={22} height={22} />
           )}
         </button>
       </header>
