@@ -2,9 +2,16 @@
 
 import Image from "next/image";
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 export default function Header() {
   const { theme, setTheme } = useTheme();
+
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
     <div className="px-4 md:px-8 xl:px-12 pt-4 md:pt-6">
@@ -28,11 +35,17 @@ export default function Header() {
           aria-label="Toggle theme"
           className="flex items-center justify-center w-9 h-9 md:w-10 md:h-10 rounded-lg bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 active:scale-95 transition-all cursor-pointer"
         >
-          {theme === "dark" ? (
-            <Image src="/crescent-moon.png" alt="Moon" width={22} height={22} />
-          ) : (
-            <Image src="/contrast.png" alt="Sun" width={22} height={22} />
-          )}
+          {mounted &&
+            (theme === "dark" ? (
+              <Image
+                src="/crescent-moon.png"
+                alt="Moon"
+                width={22}
+                height={22}
+              />
+            ) : (
+              <Image src="/contrast.png" alt="Sun" width={22} height={22} />
+            ))}
         </button>
       </header>
     </div>
