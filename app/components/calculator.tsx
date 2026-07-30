@@ -7,7 +7,7 @@ type CalculatorProps = {
   setBmi: (bmi: number | null) => void;
 };
 
-export default function Page({ bmi, setBmi }: CalculatorProps) {
+export default function Calculator({ bmi, setBmi }: CalculatorProps) {
   const [form, setForm] = useState({
     height: "",
     weight: "",

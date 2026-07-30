@@ -46,7 +46,7 @@ function getCategory(bmi: number) {
   );
 }
 
-export default function Page({ bmi }: BmiScaleProps) {
+export default function BmiScale({ bmi }: BmiScaleProps) {
   const hasBmi = bmi !== null;
 
   const clamped = hasBmi

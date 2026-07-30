@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-export default function Page() {
+export default function tipCard() {
   const [tips, setTips] = useState<any[]>([]);
   const [current, setCurrent] = useState(0);
   const [visible, setVisible] = useState(true);
