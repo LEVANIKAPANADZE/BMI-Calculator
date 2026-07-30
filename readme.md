@@ -33,7 +33,7 @@ The application allows users to calculate their BMI, visualize where they fall o
 Clone the repository:
 
 ```bash
-git clone https://github.com/LEVANIKAPANADZE/BMI-calculator
+git clone https://github.com/LEVANIKAPANADZE/BMI-Calculator
 ```
 
 Navigate into the project:
