@@ -1,8 +1,9 @@
 import { NextResponse } from "next/server";
-import tips from "../../../tips.json";
 
 export async function GET() {
   try {
+    const { default: tips } = await import("../../../tips.json");
+
     if (!tips || tips.length === 0) {
       return NextResponse.json(
         { message: "No tips available" },
@@ -11,7 +12,7 @@ export async function GET() {
     }
 
     return NextResponse.json(tips);
-  } catch (error) {
+  } catch {
     return NextResponse.json(
       { message: "Failed to load tips" },
       { status: 500 },
