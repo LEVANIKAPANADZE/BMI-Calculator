@@ -1,6 +1,4 @@
-type BmiScaleProps = {
-  bmi: number | null;
-};
+import type { BmiScaleProps } from "@/types/bmi";
 
 const CATEGORIES = [
   {

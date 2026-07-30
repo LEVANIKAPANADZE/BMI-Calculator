@@ -1,11 +1,7 @@
 "use client";
 
 import { useState } from "react";
-
-type CalculatorProps = {
-  bmi: number | null;
-  setBmi: (bmi: number | null) => void;
-};
+import type { CalculatorProps } from "@/types/bmi";
 
 export default function Calculator({ bmi, setBmi }: CalculatorProps) {
   const [form, setForm] = useState({
