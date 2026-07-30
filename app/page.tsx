@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import TipCard from "./components/tipCard/page";
-import Calculator from "./components/calculator/page";
-import BmiScale from "./components/bmiScale/page";
+import TipCard from "./components/tipCard";
+import Calculator from "./components/calculator";
+import BmiScale from "./components/bmiScale";
 
 export default function Home() {
   const [bmi, setBmi] = useState<number | null>(null);
