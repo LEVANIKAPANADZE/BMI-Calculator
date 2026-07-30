@@ -10,7 +10,7 @@ export default function tipCard() {
   useEffect(() => {
     async function fetchTips() {
       try {
-        const response = await fetch("/api/data");
+        const response = await fetch("/api/tips");
 
         if (!response.ok) {
           throw new Error("Could not load tips");
