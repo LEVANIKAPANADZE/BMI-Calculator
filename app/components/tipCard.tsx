@@ -9,9 +9,19 @@ export default function Page() {
 
   useEffect(() => {
     async function fetchTips() {
-      const response = await fetch("/api/data");
-      const data = await response.json();
-      setTips(data);
+      try {
+        const response = await fetch("/api/data");
+
+        if (!response.ok) {
+          throw new Error("Could not load tips");
+        }
+
+        const data = await response.json();
+        setTips(data);
+      } catch (error) {
+        console.error(error);
+        setTips([]);
+      }
     }
     fetchTips();
   }, []);

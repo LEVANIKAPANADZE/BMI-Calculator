@@ -11,7 +11,7 @@ export async function GET() {
       );
     }
 
-    return NextResponse.json(tips);
+    return NextResponse.json(tips, { status: 200 });
   } catch {
     return NextResponse.json(
       { message: "Failed to load tips" },
