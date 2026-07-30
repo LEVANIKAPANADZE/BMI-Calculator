@@ -1,9 +1,10 @@
 "use client";
 
+import { Tip } from "@/types/tip";
 import { useEffect, useState } from "react";
 
-export default function tipCard() {
-  const [tips, setTips] = useState<any[]>([]);
+export default function TipCard() {
+  const [tips, setTips] = useState<Tip[]>([]);
   const [current, setCurrent] = useState(0);
   const [visible, setVisible] = useState(true);
 
