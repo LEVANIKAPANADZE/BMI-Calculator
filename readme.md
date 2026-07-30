@@ -6,6 +6,9 @@ The application allows users to calculate their BMI, visualize where they fall o
 
 ---
 
+## 🌟 preview
+https://bmi-calculator-alpha-fawn.vercel.app
+
 ## ✨ Features
 
 - 📏 BMI calculation using height and weight
